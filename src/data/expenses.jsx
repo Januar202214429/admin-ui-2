@@ -4,7 +4,7 @@ export const expensesBreakdowns = [
       category: "Housing",
       amount: 250,
       percentage: 15,
-      // icon: <Icon.Housing />,
+      //icon: <Icon.Housing />,
       // arrow: <Icon.ArrowDown />,
     },
     {
@@ -12,7 +12,7 @@ export const expensesBreakdowns = [
       category: "Food",
       amount: 350,
       percentage: 8,
-      // icon: <Icon.Food />,
+      //icon: <Icon.Food />,
       // arrow: <Icon.ArrowUp />,
     },
     {
@@ -20,7 +20,7 @@ export const expensesBreakdowns = [
       category: "Transportation",
       amount: 50,
       percentage: 12,
-      // icon: <Icon.Transportation />,
+      //icon: <Icon.Transportation />,
       // arrow: <Icon.ArrowUp />,
     },
     {
@@ -28,7 +28,7 @@ export const expensesBreakdowns = [
       category: "Entertainment",
       amount: 80,
       percentage: 15,
-      // icon: <Icon.Entertainment />,
+      //icon: <Icon.Entertainment />,
       // arrow: <Icon.ArrowUp />,
     },
     {
@@ -49,7 +49,13 @@ export const expensesBreakdowns = [
     },
   ];
   
-  export const expensesStatistics = [
+  export const expensesStatistics = {
+    dataKey: "date",
+    series: [
+      { dataKey: "amountThisWeek", label: "This Week", color: "#E8E8E8" },
+      { dataKey: "amountLastWeek", label: "Last Week", color: "#299D91" },
+    ],
+    data: [
     {
       id: 1,
       date: "17 Sun",
@@ -92,6 +98,7 @@ export const expensesBreakdowns = [
       amountThisWeek: 50000,
       amountLastWeek: 10000,
     },
-  ];
+  ]
+};
   
   export default expensesBreakdowns;
